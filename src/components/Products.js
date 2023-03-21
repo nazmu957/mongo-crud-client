@@ -9,7 +9,7 @@ const Products = ( products) => {
   const agree = window.confirm(`Are you sure you want to delete: ${productName}`)
   // console.log(agree);  
   if(agree){
-    // console.log('deleteing id',_id );
+    
     fetch(`http://localhost:5000/products/${_id}`,{
       method: 'DELETE'
     })
