@@ -7,7 +7,7 @@ const AddProducts = () => {
     const [product, setProduct] = useState({});
     const handleAddProduct = event =>{
         event.preventDefault();
-        // console.log(product);
+       
 
         fetch('http://localhost:5000/products', {
                 method: 'POST',
