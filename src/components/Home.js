@@ -4,6 +4,7 @@ import AddProducts from './AddProducts';
 import Products from './Products';
 
 
+
 const Home = () => {
     const products = useLoaderData();
    
@@ -18,6 +19,7 @@ const Home = () => {
                 ></Products> )
             }
         </div>
+        
         <AddProducts></AddProducts>
     </div>
     );
