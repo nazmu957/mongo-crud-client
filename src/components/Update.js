@@ -42,7 +42,7 @@ const Update = () => {
 
     return (
         <div className='bg-red-100'>
-            <h2 className='font-bold text-xl py-5'>Please Update Your Product: {storeProduct.productName} </h2>
+            <h2 className='font-bold text-xl py-5'>Please Update Your Product  </h2>
 
             <form onSubmit={handleUpdateProduct}>
                 <input onChange={handleInputChange} defaultValue={storeProduct.productName} className='border px-3 p-[.2rem] my-[.3rem] rounded'  type="text" placeholder= 'updated product name' required name="productName" id="" />

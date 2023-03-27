@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AddProducts from './AddProducts';
+import Footer from './Footer';
 import Products from './Products';
 
 
@@ -21,6 +22,7 @@ const Home = () => {
         </div>
         
         <AddProducts></AddProducts>
+        <Footer></Footer>
     </div>
     );
 };
