@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AddProducts from './AddProducts';
 import Footer from './Footer';
+import Navbar from './Navbar';
 import Products from './Products';
 
 
@@ -11,6 +12,7 @@ const Home = () => {
    
     return (
         <div>
+            <Navbar></Navbar>
          <h1 className='text-4xl py-3 font-bold'>Welcome to Our Online Shop</h1>
         <div className='grid grid-cols-3 py-[5rem] mx-[3rem] gap-5'>
             {
