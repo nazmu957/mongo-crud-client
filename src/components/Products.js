@@ -37,7 +37,7 @@ const Products = ( products) => {
 
       <button 
       onClick={() => handleDelete(_id)}
-      className="btn btn-primary ">Delete</button>
+      className="btn btn-error">Delete</button>
     </div>
 
     </div>
