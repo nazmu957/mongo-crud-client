@@ -7,7 +7,7 @@ const Products = ( products) => {
 
  const handleDelete = product =>{
   const agree = window.confirm(`Are you sure you want to delete: ${productName}`)
-  // console.log(agree);  
+   
   if(agree){
     
     fetch(`http://localhost:5000/products/${_id}`,{
