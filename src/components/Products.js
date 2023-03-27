@@ -27,7 +27,7 @@ const Products = ( products) => {
     return (
         <div className=''>
             <div className= " card w-96 bg-grey-100 shadow-xl">
-  <figure><img className='w-[15rem] h-[15rem] pt-[2rem]' src={imageLink} alt="Shoes" /></figure>
+  <figure><img className='w-[10rem] h-[14rem] pt-[2rem]' src={imageLink} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="text-2xl font-semibold ">{productName}</h2>
     <p className='text-center'>Price{productPrice}</p>

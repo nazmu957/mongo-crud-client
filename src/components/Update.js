@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
+
 const Update = () => {
     const storeProduct = useLoaderData();
 
@@ -41,9 +42,22 @@ const Update = () => {
     }
 
     return (
-        <div className='bg-red-100'>
+        <div className= 'grid grid-cols-2 bg-red-100 '>
+            <div >
+            <div className="card w-64 bg-base-100 shadow-xl ml-[20rem] py-[2rem]">
+  <figure><img src={storeProduct.imageLink} alt="Shoes" /></figure>
+  <div className="card-body">
+    <h2 className="text-center font-bold text-2xl">{storeProduct.productName}</h2>
+    <p className='font-bold'>Price:{storeProduct.productPrice} </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat assumenda ea harum fugit in.Rem placeat temporibus expedita quia dolore culpa.</p>
+    <div className="card-actions justify-end">
+     
+    </div>
+  </div>
+</div>
+            </div>
+            <div>
             <h2 className='font-bold text-xl py-5'>Please Update Your Product  </h2>
-
             <form onSubmit={handleUpdateProduct}>
                 <input onChange={handleInputChange} defaultValue={storeProduct.productName} className='border px-3 p-[.2rem] my-[.3rem] rounded'  type="text" placeholder= 'updated product name' required name="productName" id="" />
                 <br />
@@ -53,6 +67,8 @@ const Update = () => {
                 <br />
                 <button className='btn btn-sm mt-3 mb-5' type='submit'>Update Product</button>
             </form>
+            </div>
+         
         </div>
    
     );
