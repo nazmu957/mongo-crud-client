@@ -17,7 +17,8 @@ const Home = () => {
          <section className='flex'>
             <div className='m-5 w-[10rem]'>
                     <h1 className='text-base font-bold'>Sorting Product</h1>
-                    <Link to="/products/sort"><button className="btn btn-sm text-xs">Start From Low Price</button></Link>
+                    <Link to="/products/sort"><button className="btn btn-sm text-xs mb-3 mt-3">Low to high price</button></Link>
+                    <Link to="/products/dsort"><button className="btn btn-sm text-xs">High to low price</button></Link>
             </div>
            <div className='grid grid-cols-3 py-[5rem] mx-[3rem] gap-5'>
                {

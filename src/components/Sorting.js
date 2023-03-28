@@ -6,7 +6,7 @@ const Sorting = () => {
     const lowProducts = useLoaderData();
     return (
         <div>
-            <h2>products: {lowProducts.length}</h2>
+            <h2 className='font-bold text-lg font-serif py-[1.5rem]'>Low to High Price Products List</h2>
             <div>
                 {
                     lowProducts.map(lowProduct => <SortCard

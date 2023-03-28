@@ -4,6 +4,7 @@ import AddProducts from './components/AddProducts';
 import Home from './components/Home';
 import Orders from './components/Orders';
 import Sorting from './components/Sorting';
+import Desorting from './components/Desorting'
 import Update from './components/Update';
 
 
@@ -23,6 +24,11 @@ function App() {
       path: '/products/sort',
       element: <Sorting></Sorting>,
       loader: () => fetch('http://localhost:5000/products/sort')
+    },
+    {
+      path: 'products/dsort',
+      element: <Desorting></Desorting>,
+      loader: () => fetch('http://localhost:5000/products/dsort')
     },
     {
       path:  '/update/:id',
