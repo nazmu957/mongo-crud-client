@@ -3,6 +3,7 @@ import './App.css';
 import AddProducts from './components/AddProducts';
 import Home from './components/Home';
 import Orders from './components/Orders';
+import Sorting from './components/Sorting';
 import Update from './components/Update';
 
 
@@ -19,13 +20,20 @@ function App() {
     
     },
     {
+      path: '/products/sort',
+      element: <Sorting></Sorting>,
+      loader: () => fetch('http://localhost:5000/products/sort')
+    },
+    {
       path:  '/update/:id',
       element: <Update></Update>,
       loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
-    },{
+    },
+    {
       path: '/orders',
       element: <Orders></Orders>
     }
+    
   
   ])
   return (
