@@ -17,7 +17,7 @@ const Navbar = () => {
         </a>
         <ul className="p-2 bg-base-100">
           <li><a>Mobile Components </a></li>
-          <li><a>Laptop Components  and devices </a></li>
+          <li><a>Laptop Components   </a></li>
         </ul>
       </li>
       <li><a>Laptops</a></li>
