@@ -7,7 +7,7 @@ const Orders = () => {
             <h2>this is order part</h2>
             <h2>this is order part</h2>
             <h2>this is order part</h2>
-            <h2>this is order part</h2>
+           
             
             
         </div>
