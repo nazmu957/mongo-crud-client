@@ -1,21 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Orders = () => {
-    return (
-        <div>
-            
-            <h1>Order selected</h1>
-            
-            
-            
-            
-            
-            
-         
-           
-
-        </div>
-    );
+  return <div></div>;
 };
 
 export default Orders;
