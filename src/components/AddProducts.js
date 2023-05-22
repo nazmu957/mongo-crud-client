@@ -40,7 +40,7 @@ const AddProducts = () => {
            
 
             <div>
-            <h2 className='font-bold text-2xl py-3'>Add Product</h2>
+            <h2 className='font-bold text-2xl py-3'>Course Added</h2>
             <form onSubmit={handleAddProduct}>
                 <input className='border px-3 p-[.2rem] my-[.3rem] rounded' onBlur={ handleInputBlur} type="text" placeholder='product name' required name="productName" id="" />
                 <br />
@@ -48,7 +48,7 @@ const AddProducts = () => {
                 <br />
                 <input className='border px-3 p-[.2rem]  my-[.3rem] rounded' onBlur={ handleInputBlur} type="text" placeholder='product image link' required name="imageLink" id="" />
                 <br />
-                <button className='btn btn-sm mt-3' type='submit'>Add Product</button>
+                <button className='btn btn-sm mt-3' type='submit'>Add Course</button>
             </form>
             </div>
         </div>

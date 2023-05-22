@@ -1,12 +1,21 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import  {getAuth} from 'firebase/auth'
 import AddProducts from './components/AddProducts';
 import Home from './components/Home';
 import Orders from './components/Orders';
 import Sorting from './components/Sorting';
 import Desorting from './components/Desorting'
 import Update from './components/Update';
+import app from './firebase/firebase.init';
+import Login from './components/Login';
+import Register from './components/Register';
+import PrivateRoutes from './routes/PrivateRoutes';
+import ForgotPassword from './components/ForgotPassword';
 
+
+
+const auth = getAuth(app);
 
 function App() {
   const router = createBrowserRouter([
@@ -17,17 +26,17 @@ function App() {
     },
     {
       path: '/products/add',
-      element: <AddProducts></AddProducts>,
+      element: <PrivateRoutes><AddProducts></AddProducts></PrivateRoutes>,
     
     },
     {
       path: '/products/sort',
-      element: <Sorting></Sorting>,
+      element: <PrivateRoutes><Sorting></Sorting></PrivateRoutes>,
       loader: () => fetch('http://localhost:5000/products/sort')
     },
     {
       path: 'products/dsort',
-      element: <Desorting></Desorting>,
+      element: <PrivateRoutes><Desorting></Desorting></PrivateRoutes>,
       loader: () => fetch('http://localhost:5000/products/dsort')
     },
     {
@@ -38,6 +47,18 @@ function App() {
     {
       path: '/orders',
       element: <Orders></Orders>
+    },
+    {
+      path: '/login',
+      element: <Login></Login>
+    },
+    {
+      path: '/register',
+      element: <Register></Register>
+    },
+    {
+      path: '/forgot',
+      element: <ForgotPassword></ForgotPassword>
     }
     
   

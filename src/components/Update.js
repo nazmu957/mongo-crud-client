@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 const Update = () => {
@@ -42,8 +43,11 @@ const Update = () => {
     }
 
     return (
+    
         <div className= 'grid grid-cols-2 bg-red-100 '>
+            
             <div >
+
             <div className="card w-64 bg-base-100 shadow-xl ml-[20rem] py-[2rem]">
   <figure><img src={storeProduct.imageLink} alt="Shoes" /></figure>
   <div className="card-body">
@@ -57,15 +61,15 @@ const Update = () => {
 </div>
             </div>
             <div>
-            <h2 className='font-bold text-xl py-5'>Please Update Your Product  </h2>
+            <h2 className='font-bold text-xl py-5'>Change course content  </h2>
             <form onSubmit={handleUpdateProduct}>
-                <input onChange={handleInputChange} defaultValue={storeProduct.productName} className='border px-3 p-[.2rem] my-[.3rem] rounded'  type="text" placeholder= 'updated product name' required name="productName" id="" />
+                <input onChange={handleInputChange} defaultValue={storeProduct.productName} className='border px-3 p-[.2rem] my-[.3rem] rounded'  type="text" placeholder= 'updated course name' required name="productName" id="" />
                 <br />
                 <input onChange={handleInputChange} defaultValue={storeProduct.productPrice} className='border px-3 p-[.2rem]  my-[.3rem] rounded'  type="text" placeholder='Updated price' required name="productPrice" id="" />
                 <br />
                 <input onChange={handleInputChange} defaultValue={storeProduct.imageLink} className='border px-3 p-[.2rem]  my-[.3rem] rounded'  type="text" placeholder='Updated image link' required name="imageLink" id="" />
                 <br />
-                <button className='btn btn-sm mt-3 mb-5' type='submit'>Update Product</button>
+                <button className='btn btn-sm mt-3 mb-5' type='submit'>New Content</button>
             </form>
             </div>
          

@@ -7,7 +7,7 @@ const Footer = () => {
   <div>
     
     <p className="font-bold">
-      Gadget Villa <br/>Providing reliable tech since 1992
+      TecCourse <br/>Providing reliable tech since 1992
     </p> 
     <p>Copyright © 2023 - All right reserved</p>
   </div> 
